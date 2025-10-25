@@ -1,7 +1,7 @@
 name: dev
 
 services:
-  # 1. MongoDB - Base de datos para Auth
+  # 1. MongoDB - Base de datos para Auth 
   mongodb:
     container_name: mongodb
     image: mongo:7.0
