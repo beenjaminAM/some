@@ -66,12 +66,6 @@ const Create = () => {
       fetchData();
     }
   }, [activeForm, auth?.accessToken]);
-  
-  useEffect(() => {
-    console.log(areas)
-    console.log("SQ_BASE_URL")
-    console.log(SQ_BASE_URL)
-  }, [areas]);
 
   
 
