@@ -32,7 +32,7 @@ const Solicitudes = () => {
         if (Array.isArray(response.data)) {
           setSolicitudes(response.data);  // Guardamos solo si es un array
         } else {
-          console.error("La respuesta no es un array", response.data);
+          //console.error("La respuesta no es un array", response.data);
           setSolicitudes([]);
         }
       } catch (error) {
@@ -141,3 +141,4 @@ const Solicitudes = () => {
 };
 
 export default Solicitudes;
+
