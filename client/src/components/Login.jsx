@@ -26,7 +26,7 @@ const Login = () => {
 
     useEffect(() => {
         userRef.current.focus();
-        console.log(`Location ${from}`);
+        //console.log(`Location ${from}`);
         
     }, [])
 
@@ -52,7 +52,7 @@ const Login = () => {
                     withCredentials: true
                 }
             );
-            console.log(JSON.stringify(response?.data));
+            //console.log(JSON.stringify(response?.data));
             //console.log(JSON.stringify(response));
             const accessToken = response?.data?.accessToken;
             const user_id = response?.data?.id;
@@ -61,7 +61,7 @@ const Login = () => {
             setUser('');
             setPwd('');
             dispatch(fetchData(accessToken));
-            console.log(`User id ${user_id}`)
+            //console.log(`User id ${user_id}`)
             navigate(from, { replace: true })
         } catch (err) {
             if (!err?.response) {
