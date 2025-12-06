@@ -20,12 +20,12 @@ const PersistLogin = () => {
       }
     
       !auth?.accessToken ? verifyRefreshToken(): setIsLoading(false)
-      console.log(`[${auth?.accessToken? true: false}] Execution Of persisted login /(/, editor, admin, lounge)`)
+      //console.log(`[${auth?.accessToken? true: false}] Execution Of persisted login /(/, editor, admin, lounge)`)
     }, [])
 
     useEffect(() => {
-        console.log(`isLoading: ${isLoading}`)
-        console.log(`aT: ${JSON.stringify(auth?.accessToken)}`)
+        //console.log(`isLoading: ${isLoading}`)
+        //console.log(`aT: ${JSON.stringify(auth?.accessToken)}`)
         
     }, [isLoading])
     
