@@ -5,11 +5,6 @@ import { useEffect } from "react";
 const RequireAuth = ({ allowedRoles }) => {
     const { auth } = useAuth();
     const location = useLocation();
-
-    useEffect(() => {
-      console.log('%%%autrh')
-      console.log(auth)
-    }, [])
     
 
     return (
