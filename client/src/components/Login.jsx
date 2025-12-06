@@ -34,13 +34,6 @@ const Login = () => {
         setErrMsg('');
     }, [user, pwd])
 
-    // useEffect(() => {
-    //     dispatch(fetchData(auth.accessToken));
-    //     console.error("BENJAMIN ATENTO")
-    //     console.error(auth.accessToken)
-    //     console.error("BENJAMIN ATENTO")
-    // }, [setAuth])
-
     const handleSubmit = async (e) => {
         e.preventDefault();
 
