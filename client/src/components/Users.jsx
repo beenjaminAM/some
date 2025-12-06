@@ -22,7 +22,6 @@ const Users = () => {
 
 
     useEffect(() => {
-        console.log('effect ran');
         let isMounted = true;
         const controller = new AbortController();
         
