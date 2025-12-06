@@ -45,7 +45,6 @@ const Users = () => {
         }
 
         return () => {
-            console.log('unmounted');
             effectRan.current = true
             isMounted = false;
             controller.abort();
